@@ -1,33 +1,38 @@
-# BlackBox Mobile Mirror (DILIP DC)
+# DILIP DC — BlackBox Mobile Mirror  
+### Advanced Android Screen Mirroring & Control for Linux (BlackBox Linux Optimized)
 
-A lightweight Android screen mirroring tool for Linux using adb + scrcpy.
-Includes a full GTK3 GUI and a minimal CLI version.
+BlackBox Mobile Mirror is a **lightweight, powerful, GUI + CLI mirroring tool** for Linux.  
+It lets you **mirror and control any Android device** (Motorola, Samsung, Vivo, Xiaomi, Realme, OnePlus, Oppo, etc.) with **keyboard + mouse** using the power of scrcpy.
 
-## Features
-- Mirror Android screen
-- Keyboard + mouse control
-- USB + Wireless ADB
-- Low/Medium/High presets
-- Recording support
-- Clean GTK3 interface
-- Ultra-light Bash CLI script
+This project is fully optimized for:
 
-## Requirements
-sudo apt install -y adb scrcpy python3-gi gir1.2-gtk-3.0
+- **BlackBox Linux**
+- Debian / Ubuntu / Kali / MX Linux
+- Low-RAM lightweight systems
+- Android 10, 11, 12, 13, 14, 15 (fully supported)
+- Motorola devices (special fixes included)
 
-## Run GUI
-python3 blackbox_mobile_mirror.py
+Built and maintained by **DILIP DC**.
 
-## CLI Mode
-chmod +x bbmm_cli.sh
-./bbmm_cli.sh
+---
 
-## Install launcher
-chmod +x install.sh
-./install.sh
+## ✨ Features
 
-## For packagers
-See PACKAGING.md
+✔ Android Screen Mirroring (USB & Wireless)  
+✔ Full Keyboard + Mouse Control  
+✔ Low, Medium, High Quality Presets  
+✔ Recording Support (MP4)  
+✔ Latest scrcpy backend (Snap version 3.x+)  
+✔ Android 14/15 Compatibility (Motorola G45, Xiaomi, Samsung, OnePlus)  
+✔ CLI Mode (ultra-lightweight)  
+✔ GUI Mode (GTK3)  
+✔ Auto-permissions & display fixes  
+✔ Menu Launcher for easy use  
+✔ Works on ALL major Linux systems  
 
-## License
-MIT
+---
+
+# 🚀 Installation (Easy Method)
+
+### **1. Download the project**
+
