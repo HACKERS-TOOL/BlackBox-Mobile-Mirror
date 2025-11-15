@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=DILIP DC — Mobile Mirror
+Comment=Android screen mirroring tool
+Exec=python3 blackbox_mobile_mirror.py
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=Utility;
