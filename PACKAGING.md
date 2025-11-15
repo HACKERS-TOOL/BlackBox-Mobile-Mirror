@@ -1,34 +1,37 @@
-# PACKAGING — BlackBox Mobile Mirror (DILIP DC)
+# Packaging Guide — DILIP DC Mobile Mirror
 
-This document describes how to package the BlackBox Mobile Mirror into:
-- .deb package (Debian/Ubuntu/Kali/MX)
-- AppImage (all Linux distros)
-- Tar.gz release (simple Linux package)
-- Recommended GitHub release structure
+This document helps Linux maintainers package the application as:
+
+- `.deb` package  
+- AppImage  
+- Snap (future)  
+- Flatpak (future)  
+
+The application runs using Python + GTK3 + snap scrcpy.
+
+---
+
+# 📦 1. Dependencies
+
+### Runtime:
+
+- python3  
+- python3-gi  
+- gir1.2-gtk-3.0  
+- adb  
+- snap (for scrcpy backend)  
+- scrcpy (snap package)
+
+### Installer will configure:
+
+- snap scrcpy  
+- snap permissions  
+- xhost X11 access  
+- desktop launcher  
 
 ---
 
-# 1. Build a .deb Package (Debian/Ubuntu/Kali/MX)
-
-## 1.1 Folder Structure
-
-Create the following:
-
-deb-build/
-└── blackbox-mobile-mirror/
-    ├── DEBIAN/
-    │   └── control
-    └── usr/
-        └── local/
-            └── share/
-                └── blackbox-mobile-mirror/
-                    ├── blackbox_mobile_mirror.py
-                    ├── bbmm_cli.sh
-                    ├── install.sh
-                    ├── blackbox-mobile-mirror.desktop
-                    └── README.md
-
----
+# 🧱 2. Folder Structure for Packaging
 
 ## 1.2 control File
 
